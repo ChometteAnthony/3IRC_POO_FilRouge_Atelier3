@@ -5,18 +5,20 @@ import javafx.scene.image.Image;
 
 /**
  * @author francoise.perrin
- * Cette interface permet de vérifier qu'un Node
- * est fonctionnellement une pièce du jeu
+ *         Cette interface permet de vï¿½rifier qu'un Node
+ *         est fonctionnellement une piï¿½ce du jeu
  * 
- * Lorsque le pion du model est promu en dame
- * le visuel change
+ *         Lorsque le pion du model est promu en dame
+ *         le visuel change
  * 
- * La méthode hasSameColorAsGamer sera utilise en mode Client/server
- * pour empêcher un joueur de jouer une pièce qui ne lui appartient pas
+ *         La mï¿½thode hasSameColorAsGamer sera utilise en mode Client/server
+ *         pour empï¿½cher un joueur de jouer une piï¿½ce qui ne lui appartient pas
  */
 public interface CheckersPieceGui {
-	
+
 	public void promote(Image image);
 
 	public boolean hasSameColorAsGamer(PieceSquareColor gamerColor);
+
+	void removePiece();
 }
